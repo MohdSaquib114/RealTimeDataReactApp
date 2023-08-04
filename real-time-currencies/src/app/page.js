@@ -42,9 +42,11 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
+
     const fillChart = (number) => {
       for (let i = 0; i < number; i++) {
-        stockInfo[i].t ? console.log(stockInfo[i]) : null
+
+        stockInfo[i]?.t ? console.log(stockInfo[i]) : null
         //options.options.xaxis.categories.append(setCategorie(stockInfo[i].t))
       }
     }
